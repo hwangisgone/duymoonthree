@@ -1,0 +1,132 @@
+*{
+	box-sizing:  border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+
+	background-color: #001845;
+	color: #e2e2e2;
+}
+
+#main-header{
+	background-color: #36abbc;
+	color: #fef0ff;
+}
+
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.section{
+	/* background-color: #f2f2f2; */
+}
+
+
+/* Section-specific */
+#main-header .container{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	max-width: 100%;
+	padding: 15px 50px;
+
+	/*
+		1. Position
+		2. Box (alignment - size - margin - padding - border)
+		3. Border
+		4. Background
+		5. Text
+		6. Transforms
+		7. Transitions/Animations
+		8. Other
+	*/
+}
+
+#love-quote{
+	margin-left: 50px;
+
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.section .container{
+	display: flex;
+	justify-content: center;
+}
+
+.section .container .content-text-size{
+	width: 33%;
+	margin: 0 10px;
+	background: red;
+}
+
+.section .container .content-img-size{
+	width: 66%;
+	background: green;
+	margin: 0 10px;
+}
+
+/* Global content stuffs */
+.content-text-size h1{
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.content-img-size{
+	font-size: 0;			/* Remove horizontal spacing between images */
+}
+.content-img-size img{
+	vertical-align: top;	/* Remove vertical spacing between images */
+}
+.content-img-size .gallery-img-size{
+	width: calc(50% - 10px);
+	height: auto;
+	margin: 10px 10px 0 0;
+}
+.content-img-size .img-size{
+	width: 100%;
+	height: auto;
+}
+
+/* Action when windows size smaller than 700px */
+@media (max-width: 700px){
+	.section .container{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.content-text-size{
+		width: 100%;
+	}
+
+	.content-img-size{
+		width: 100%;
+	}
+}
+
+/* Section-specific */
+.section2 .container{
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	padding: 0;
+}
+
+.section2 .container .content-img-size{
+	width: 30%;
+	margin: 0;
+}
+
+.section2 .container .content-text-size{
+	width: 30%;
+	margin: 0 200px;
+}
