@@ -44,6 +44,20 @@ p {
     font-size: 1rem;
 }
 
+
+/* Responsible for background color change */
+.wrapper {
+  transition: background .5s ease;
+}
+
+.spacing {
+	height: 100vh;
+}
+
+#iceberg{
+	background-image: linear-gradient(#2cbae6, #09557c, #2e0d3d);
+}
+
 /*
 #nav-bar {font-size:1vw}
 #main-header {font-size: 0.9vw}
@@ -94,7 +108,6 @@ h3 {font-size:1.25vw}
 
 #love-quote{
 	margin-left: 20px;
-	font-size: 18px;
 	font-weight: bold;
 }
 
@@ -150,46 +163,48 @@ h3 {font-size:1.25vw}
 		align-items: center;
 	}
 
-	.content-text-size{
+	.section .container .content-text-size{
 		width: 100%;
+		margin: 0;
 	}
 
-	.content-img-size{
+	.section .container .content-img-size{
 		width: 100%;
+		margin:  0;
 	}
 }
 
 @media (max-width: 480px) {
     html {
-        /* font-size: 2.5vw; */
-        overflow: scroll;
+        font-size: 3.75vw;
+        overflow-x: scroll;
     }
     .container{
-    	overflow: scroll;
+    	overflow-x: scroll;
     }
 }
 
 @media (min-width: 480px) {
     html {
-        font-size: 13px;
+        font-size: 19px;
     }
 }
 
 @media (min-width: 768px) {
     html {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 
 @media (min-width: 992px) {
     html {
-        font-size: 15px;
+        font-size: 21px;
     }
 }
 
 @media (min-width: 1200px) {
     html {
-        font-size: 16px;
+        font-size: 22px;
     }
 }
 
