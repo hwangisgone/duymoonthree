@@ -135,13 +135,11 @@ h3 {font-size:1.25vw}
 .section .container .content-text-size{
 	width: 33%;
 	margin: 0 10px;
-	background: red;
 }
 
 .section .container .content-img-size{
 	width: 66%;
 	margin: 0 10px;
-	background: green;
 }
 
 .content-img-size .gallery-img-size{
